@@ -54,7 +54,8 @@ const Homework = () => {
                                         <img src={clockk} alt="" width="50px" className='pt-6 pl-2' />
                                     </div>
                                     <td>
-                                        <select onChange={(e)=> Setday(e.target.value)} className='rounded-lg w-[300px] h-[30px] mt-7' value={day}>
+                                        <h5 className='text-[18px] mt-7'>Day: </h5>
+                                        <select onChange={(e)=> Setday(e.target.value)} className='rounded-lg w-[300px] h-[30px] mt-3' value={day}>
                                             {dataWork.map((item, id) => {
                                                 return (
                                                     <option key={id} value={item}>{item}</option>
@@ -63,7 +64,8 @@ const Homework = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select className='rounded-lg w-[300px] h-[30px] mt-7' onChange={(e)=>Setmonth(e.target.value)} value={month}>
+                                        <h6 className='text-[18px] mt-5'>Month: </h6>
+                                        <select className='rounded-lg w-[300px] h-[30px] mt-3' onChange={(e)=>Setmonth(e.target.value)} value={month}>
                                             {DataMonther.map((item, id) => {
                                                 return (
                                                     <option key={id} value={item}>{item}</option>
@@ -72,7 +74,8 @@ const Homework = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select className='rounded-lg w-[300px] h-[30px] mt-7' onChange={(e)=>Sethour(e.target.value)} value={hour}>
+                                        <h6 className='text-[18px] mt-5'>Time: </h6>
+                                        <select className='rounded-lg w-[300px] h-[30px] mt-3' onChange={(e)=>Sethour(e.target.value)} value={hour}>
                                             {DataTime.map((item, id) => {
                                                 return (
                                                     <option key={id} value={item} >{item}</option>
@@ -81,7 +84,7 @@ const Homework = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select className='rounded-lg w-[300px] h-[30px] mt-7'  onChange={(e)=>Setminute(e.target.value)} value={minute}>
+                                        <select className='rounded-lg w-[300px] h-[30px] mt-3'  onChange={(e)=>Setminute(e.target.value)} value={minute}>
                                             {DataNumber.map((item, id) => {
                                                 return (
                                                     <option key={id} value={item}>{item}</option>

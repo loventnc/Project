@@ -56,8 +56,11 @@ const Class = () => {
                                         <img src={openbook} alt="" width="50px" className='pt-6 pl-2' />
                                     </div>
                                     <input type="text" className='rounded-lg w-[300px] h-[30px] mt-7' onChange={(e) => setNamesubject(e.target.value)} />
+                                
                                     <td>
-                                        <select className= "rounded-lg mt-7" onChange={(e)=>setClasssite(e.target.value)}>
+                                        <h5 className='text-[18px] mt-7'>Onsite/Online: </h5>
+                                        <select className= "rounded-lg mt-5" onChange={(e)=>setClasssite(e.target.value)}>
+                            
                                             {Sitelearn.map((item, id) => {
                                                 return (
                                                     <option key={id} value={item.title}>{item.title}</option>
@@ -72,7 +75,8 @@ const Class = () => {
                                         <img src={schedule} alt="" width="50px" className='pt-6 pl-2' />
                                     </div>
                                     <td>
-                                        <select className='rounded-lg w-[300px] h-[30px] mt-7' onChange={(e) => setDay(e.target.value)} value={day}>
+                                        <h5 className='text-[18px] mt-5'>Day: </h5>
+                                        <select className='rounded-lg w-[300px] h-[30px] mt-3' onChange={(e) => setDay(e.target.value)} value={day}>
                                             {Datadate.map((item, id) => {
                                                 return (
                                                     <option key={id} value={item.datevalue}>{item.date}</option>
@@ -80,8 +84,9 @@ const Class = () => {
                                             })}
                                         </select>
                                     </td>
+                                    <h5 className='text-[18px] mt-7'>Time: </h5>
                                     <td>
-                                        <select className='rounded-lg w-[300px] h-[30px] mt-7' onChange={(e) => setTime(e.target.value)} value={time}>
+                                        <select className='rounded-lg w-[300px] h-[30px] mt-3' onChange={(e) => setTime(e.target.value)} value={time}>
                                             {DataTime.map((item, id) => {
                                                 return (
                                                     <option key={id} value={item}>{item}</option>
@@ -90,7 +95,7 @@ const Class = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select className='rounded-lg w-[300px] h-[30px] mt-7' onChange={(e) => setMintime(e.target.value)} value={mintime}>
+                                        <select className='rounded-lg w-[300px] h-[30px] mt-3' onChange={(e) => setMintime(e.target.value)} value={mintime}>
                                             {DataNumber.map((item, id) => {
                                                 return (
                                                     <option key={id} value={item}>{item}</option>

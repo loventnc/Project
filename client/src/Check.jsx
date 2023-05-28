@@ -29,8 +29,9 @@ export const Check = () => {
 
     return (
         <>
-            <div className='bg-[#AFD3E2] h-screen'>
-                <div className='container mx-auto px-[5px]'>
+            <div className='bg-[#AFD3E2] h-auto'>
+               <div className='h-full'>
+               <div className='container mx-auto px-[5px]'>
                     <div className='pt-10 rounded-lg '>
                         <h1 className='text-[24px] bg-[#19A7CE] text-white px-10 py-2'>CHECK</h1>
                     </div>
@@ -43,11 +44,11 @@ export const Check = () => {
                                 </div>
                                 {dataClass.map((item, index) => {
                                     return (
-                                        <div key={index}>
-                                            <h1>{item.namesubject}</h1>
-                                            <h1>{item.classsite}</h1>
-                                            <h1>{item.day}</h1>
-                                            <h1>{item.time}:{item.mintime}</h1>
+                                        <div className='bg-[#90cbd8] m-10 py-3 px-10 rounded-lg' key={index}>
+                                            <h1>Subject : {item.namesubject}</h1>
+                                            <h1>Site : {item.classsite}</h1>
+                                            <h1>Day : {item.day}</h1>
+                                            <h1>Tim : {item.time}:{item.mintime}</h1>
                                         </div>
                                     )
                                 })}
@@ -60,19 +61,19 @@ export const Check = () => {
                             </div>
                             {dataWork.map((item, index) => {
                                 return(
-                                    <div key={index}>
-                                        <h1>{item.namework}</h1>
-                                        <h1>{item.day}</h1>
-                                        <h1>{item.month}</h1>
-                                        <h1>{item.hour}:{item.mintime}</h1>
+                                    <div className='bg-[#90cbd8] m-10 py-3 px-10 rounded-lg' key={index}>
+                                        <h1>Subject : {item.namework}</h1>
+                                        <h1>Day : {item.day}</h1>
+                                        <h1>Month : {item.month}</h1>
+                                        <h1>Time : {item.hour}:{item.mintime}</h1>
                                     </div>
                                 )
                             })
-                                
                             }
                         </div>
                     </div>
                 </div>
+               </div>
             </div>
         </>
     )
