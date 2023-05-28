@@ -65,7 +65,7 @@ export const Check = () => {
                                         <h1>Subject : {item.namework}</h1>
                                         <h1>Day : {item.day}</h1>
                                         <h1>Month : {item.month}</h1>
-                                        <h1>Time : {item.hour}:{item.mintime}</h1>
+                                        <h1>Time : {item.hour}:{item.minute}</h1>
                                     </div>
                                 )
                             })
