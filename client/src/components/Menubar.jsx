@@ -24,7 +24,6 @@ function Menubar() {
                     </li>
                     <li className="rounded-full hover:text-[#62CDFF] hover:underline underline-offset-4">
                         <NavLink to="/check">CHECK</NavLink>
-                        <a href="/check">CHECK</a>
                     </li>
                     <li className="rounded-full hover:text-[#62CDFF] hover:underline underline-offset-4">
                         <NavLink to='/contact'>CONTACT</NavLink>

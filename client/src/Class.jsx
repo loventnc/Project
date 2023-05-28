@@ -57,12 +57,12 @@ const Class = () => {
                                     </div>
                                     <input type="text" className='rounded-lg w-[300px] h-[30px] mt-7' onChange={(e) => setNamesubject(e.target.value)} />
                                     <td>
-                                        <select onChange={(e)=>setClasssite(e.target.value)}>
+                                        <select className= "rounded-lg mt-7" onChange={(e)=>setClasssite(e.target.value)}>
                                             {Sitelearn.map((item, id) => {
                                                 return (
                                                     <option key={id} value={item.title}>{item.title}</option>
                                                 )
-                                            })}
+                                            })} 
                                         </select>
                                     </td>
                                 </div>
